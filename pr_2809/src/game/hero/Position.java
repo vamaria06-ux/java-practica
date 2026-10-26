@@ -1,5 +1,7 @@
 package game.hero;
 
+import java.util.Objects;
+
 public class Position {
     private final int x;
     private final int y;
@@ -16,4 +18,18 @@ public class Position {
     public String toString() {
         return "(" + x + "," + y + ")";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Position)) return false;
+        Position other = (Position) o;
+        return x == other.x && y == other.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
+
 }
