@@ -1,0 +1,28 @@
+[
+  {
+    "type": "pet",
+    "name": "Погладь кота",
+    "target": "Кот",
+    "count": 10
+  },
+  {
+    "type": "pet",
+    "name": "Погладь Ежа",
+    "target": "Ёж",
+    "count": 10
+  },
+  {
+    "type": "collect",
+    "name": "Сбор трав",
+    "item": "Целебная трава",
+    "reward": 150,
+    "count": 10
+  },
+  {
+    "type": "escort",
+    "name": "Сопроводи торговца",
+    "npc": "Торговец Барт",
+    "destination": "Рынок",
+    "reward": 50
+  }
+]
